@@ -1422,7 +1422,7 @@ GameObject:
   - component: {fileID: 461270628}
   - component: {fileID: 461270627}
   m_Layer: 0
-  m_Name: Button (2)
+  m_Name: CloseButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1756,7 +1756,7 @@ GameObject:
   - component: {fileID: 527711363}
   - component: {fileID: 527711362}
   m_Layer: 0
-  m_Name: Button
+  m_Name: RecluitButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2207,7 +2207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mentorTrainingCellPrefab: {fileID: 1835497170}
-  scrollContent: {fileID: 0}
+  scrollContent: {fileID: 284007528}
 --- !u!114 &745106407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2859,16 +2859,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mentorPurchaseView: {fileID: 75681722}
   mentorTrainingView: {fileID: 745106406}
-  workButton: {fileID: 0}
-  dataClearButton: {fileID: 0}
-  moneyLabel: {fileID: 0}
-  autoWorkLabel: {fileID: 0}
-  employeesCountLabel: {fileID: 0}
-  productivityLabel: {fileID: 0}
+  workButton: {fileID: 527711362}
+  dataClearButton: {fileID: 461270627}
+  moneyLabel: {fileID: 1997621607}
+  autoWorkLabel: {fileID: 1997621607}
+  employeesCountLabel: {fileID: 521430973}
+  productivityLabel: {fileID: 1992208898}
   currentView: 2
   lastView: 0
-  openButton: {fileID: 0}
-  mainPanel: {fileID: 0}
+  openButton: {fileID: 461270627}
+  mainPanel: {fileID: 1036322075}
   openPoint: {fileID: 0}
   closePoint: {fileID: 0}
 --- !u!1 &1014342113
@@ -4899,6 +4899,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 177758, guid: 970dd4b9371394fb4890965f608d46fd, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 970dd4b9371394fb4890965f608d46fd, type: 2}
   m_IsPrefabParent: 0
@@ -5349,7 +5353,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &1943263099
 AudioListener:
   m_ObjectHideFlags: 0
@@ -5432,7 +5436,7 @@ GameObject:
   - component: {fileID: 1959509093}
   - component: {fileID: 1959509092}
   m_Layer: 0
-  m_Name: Button (1)
+  m_Name: TrainingButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
