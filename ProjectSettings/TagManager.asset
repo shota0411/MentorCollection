@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - SlashHitbox_Vert
+  - SlashHitbox_Horiz
+  - GreenSong
+  - Attackable
+  - BasicAttack
+  - TennisBall
+  - BlueSong
+  - RedSong
+  - WalkPoints
   layers:
   - Default
   - TransparentFX
