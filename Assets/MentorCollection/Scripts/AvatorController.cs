@@ -35,7 +35,7 @@ public class AvatorController : MonoBehaviour {
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        target = AvatarManager.instance.StartPoint;
+        target = AvatorManager.instance.StartPoint;
     }
 
     private void Update()
@@ -44,9 +44,9 @@ public class AvatorController : MonoBehaviour {
         agent.SetDestination(target.position);
 
         float distance = Vector3.Distance(transform.position, target.position);
-        if (distance < 0.2f) 
+        if (distance < 1.5f) 
         {
-            target = AvatarManager.instance.GetTarget();
+            target = AvatorManager.instance.GetTarget();
         }
     }
 

@@ -26,7 +26,7 @@ public class MentorTrainingCell : MonoBehaviour
     {
         get
         {
-            return AvatarManager.instance.GetAvatar(characterData.UniqueID);
+            return AvatorManager.instance.GetAvatar(characterData.UniqueID);
         }
     }
 

@@ -85,8 +85,8 @@ public class MstCharacter
 		get { return flavorText; }
 	}
 
-//	public bool PurchaseAvailable(int currentMoney)
-//	{
-//		return (currentMoney < InitialCost) ? false : true;
-//	}
+	public bool PurchaseAvailable(int currentMoney)
+	{
+		return (currentMoney < InitialCost) ? false : true;
+	}
 }

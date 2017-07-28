@@ -34,11 +34,11 @@ public class MentorPurchaseCell : MonoBehaviour
         var ch = user.Characters.Find(c => c.MasterId == data.ID);
         isSold = (ch == null) ? false : true;
         if (isSold) SoldView();
-//        if (!characterData.PurchaseAvailable(user.Money.Value)) buttonGroup.alpha = 0.5f;
+        if (!characterData.PurchaseAvailable(user.Money.Value)) buttonGroup.alpha = 0.5f;
         purchaseButton.onClick.AddListener(() =>
         {
             if (isSold) return;
-//            if (!characterData.PurchaseAvailable(user.Money)) return;
+            if (!characterData.PurchaseAvailable(user.Money.Value)) return;
             isSold = true;
             SoldView();
             var chara = user.NewCharacter(characterData);
