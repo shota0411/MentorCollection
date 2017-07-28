@@ -20,7 +20,7 @@ public class GameManager
 		{
 			PortrateUIManager.instance.Setup();
 			
-			AvatarManager.instance.Setup();
+			AvatorManager.instance.Setup();
 		});
 
 		// 追記

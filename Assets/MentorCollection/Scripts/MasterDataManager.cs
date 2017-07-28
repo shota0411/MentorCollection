@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using System.Linq;
 
-public class MasterDataManager 
+[System.SerializableAttribute]public class MasterDataManager 
 	: SingletonMonoBehaviour<MasterDataManager>
 {
 	[SerializeField]
@@ -23,13 +23,13 @@ public class MasterDataManager
 	}
 
 	// PublishしてゲットしたURL
-	const string csvUrl = "https://docs.google.com/spreadsheets/d/1mYUT577B26EFcw9ifaXWbMMoUHvbkR_NyHYdh3dc94k/pub?gid=605974578&single=true&output=csv";
+	const string csvUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTcquPRaWVFIuaR6bZdnniobzA9SanTP2Ea3DpSWf05tNpNOG2eqvVPMMiVOMoqOndc0x1ZPZJCio1b/pub?gid=0&single=true&output=csv";
 
 	// GameManagerから呼んでもらう
 	public void LoadData(UnityAction onFinish)
 	{
 		ConnectionManager.instance.ConnectionAPI(
-			csvUrl, 
+			csvUrl,
 			(string result) => {
 				var csv = CSVReader.SplitCsvGrid(result);
 				for (int i=1; i<csv.GetLength(1)-1; i++) 

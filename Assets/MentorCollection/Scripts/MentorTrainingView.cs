@@ -10,7 +10,7 @@ public class MentorTrainingView : MonoBehaviour
 
 	private void Start ()
 	{
-		gameObject.SetActive(false);
+//		gameObject.SetActive(false);
 	}
 
 	// ゲーム開始時に保存してるデータが持ってるCharacterのCellを全部生成する用

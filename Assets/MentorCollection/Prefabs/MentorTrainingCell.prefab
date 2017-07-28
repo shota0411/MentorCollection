@@ -161,6 +161,7 @@ GameObject:
   - component: {fileID: 222137148324222564}
   - component: {fileID: 114914035145743488}
   - component: {fileID: 114951550389684458}
+  - component: {fileID: 114486804580257148}
   m_Layer: 0
   m_Name: DescriptionButton
   m_TagString: Untagged
@@ -298,7 +299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f9b268ffda843ceb88ab2a5a51a40e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  iconImage: {fileID: 0}
+  iconImage: {fileID: 114848966956580210}
   nameLabel: {fileID: 114570990951796888}
   rarityLabel: {fileID: 114975928093104510}
   levelLabel: {fileID: 114998224633207602}
@@ -471,6 +472,23 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114486804580257148
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1516059539173164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 769e800b9c1454f29ab0189d75a20bdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameLabel: {fileID: 114570990951796888}
+  flavorTextLabel: {fileID: 0}
+  rarityLabel: {fileID: 114975928093104510}
+  levelLabel: {fileID: 114998224633207602}
+  productivityLabel: {fileID: 114388380566305268}
+  closeButton: {fileID: 0}
 --- !u!114 &114523638996472064
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1108,10 +1126,10 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 143.2, y: -25}
+  m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224259776372102158
 RectTransform:

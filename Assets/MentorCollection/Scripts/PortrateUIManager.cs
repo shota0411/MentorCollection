@@ -48,6 +48,12 @@ public class PortrateUIManager
             UnityEngine.SceneManagement.SceneManager.LoadScene("Main");
         });
 
+        openButton.onClick.AddListener(() => {
+            ChangeView(Const.View.Purchase);
+            openButton.gameObject.SetActive(false);
+        });
+        openButton.gameObject.SetActive(false);
+        
         // 追記
         User.Money.Subscribe(_ => { UpdateView(); });
     }
@@ -71,11 +77,12 @@ public class PortrateUIManager
                 mentorPurchaseView.gameObject.SetActive(true);
                 mentorTrainingView.gameObject.SetActive(false);
                 break;
-            case Const.View.Training:
+            case Const.View.Training:;
                 mentorPurchaseView.gameObject.SetActive(false);
                 mentorTrainingView.gameObject.SetActive(true);
                 break;
             case Const.View.Close:
+                openButton.gameObject.SetActive(true);
                 break;
         }
     }

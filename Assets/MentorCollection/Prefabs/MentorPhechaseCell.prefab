@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 222744911381649740}
   - component: {fileID: 114471103820484336}
   - component: {fileID: 114256958091513068}
+  - component: {fileID: 225028023416680066}
   m_Layer: 0
   m_Name: PerchaseButton
   m_TagString: Untagged
@@ -292,14 +293,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03a532408b87648ffb636ee13b8c3906, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  iconImage: {fileID: 0}
+  iconImage: {fileID: 114754396558343034}
   nameLabel: {fileID: 114043777233287188}
   rarityLabel: {fileID: 114012733742708034}
   flavorTextLabel: {fileID: 114073001315581780}
   productivityLabel: {fileID: 114518714521510154}
   costLabel: {fileID: 114855156027526812}
   purchaseButton: {fileID: 114256958091513068}
-  buttonGroup: {fileID: 0}
+  buttonGroup: {fileID: 225028023416680066}
 --- !u!114 &114256958091513068
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -772,3 +773,14 @@ RectTransform:
   m_AnchoredPosition: {x: 20.5, y: 13.425}
   m_SizeDelta: {x: 86.3, y: 15.9}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &225028023416680066
+CanvasGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1507002041572742}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
